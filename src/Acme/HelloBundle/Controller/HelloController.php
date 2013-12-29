@@ -1,0 +1,16 @@
+<?php
+
+namespace Acme\HelloBundle\Controller;
+
+use Symfony\Component\HttpFoundation\Response;
+
+class HelloController
+{
+    public function indexAction($name)
+    {
+        return $this->render(
+            'AcmeHelloBundle:Hello:index.html.twig',
+            array('name' => $name)
+        );
+    }
+}
